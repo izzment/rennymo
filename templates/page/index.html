@@ -1,0 +1,210 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morenikeji Olonilua</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/renny-logo-light.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href={% static 'styles.css' %}>
+    
+</head>
+<body>
+    <nav>
+        <p><a href="#about">About</a></p>
+        <p><a href="#services">Services</a></p>
+        <div class="logo">
+            <!-- •RennyMo• -->
+            <a href={% url 'home' %}><img src={% static "images/name.png" %} alt="RennyMo"></a>     
+        </div>
+        <p><a href="#portfolio">Portfolio</a></p>
+        <div class="contact"><a href="#contact"><button>Contact</button></a></div>
+    </nav>
+    <hr class="first"/>
+    <div class="title-card">Morenikeji Olonilua E.Y.</div>
+    <header>
+        <div>
+            <img class="title-card-image title-one" src={% static "images/slimDesk.png" %} alt="image_of_renny_public-speaking">
+        </div>
+        <div id="title-card-container">
+            <h2>You deserve <span>excellence</span></h2>
+            <p>Broadcast Journalist | Development Communication Strategist | MHH Advocate (Menstrual Health and Hygiene) | Corporate Event Compere | Scriptwriting | Voiceovers | Content Creation | Storytelling | Project Management | Podcasts</p>
+            <a href="#services"><button>View Services</button></a> 
+        </div>
+    </header>
+    <main>
+        <div class="sponsor-container">
+            <h2>Partners</h2>
+            <hr/>
+            <div class="sponsors">
+                <img src={% static "images/3.png" %}>
+                <img src={% static "images/4.png" %}>
+                <img src={% static "images/8.png" %}>
+                <img src={% static "images/5.png" %}>
+                <img src={% static "images/6.png" %}>
+                <img src={% static "images/7.png" %}>
+            </div>
+            <hr/>
+        </div>
+        <div class="second-container" id="about">
+            <div class="greeting-container">
+                <div class="about-text">
+                    <h1>Meet Your Next Host</h1>
+                    <h2>Renny <em>Mo</em></h2>
+                    <h6>The Excellent Compère</h6>
+                    <div class="about-text-content">
+                        <p>Morenikeji, also known as RennyMo, is a multipotentialite and social entrepreneur, an award-winning broadcast journalist, and an expert in public speaking and development communications strategy. She serves as a corporate event compère and is a passionate advocate for Sustainable Development Goals 5, 3, and 13.</p>
+                        <p>RennyMo has worked with local and international organizations across West Africa, moderating panels, hosting events as a Master of Ceremony, and developing and executing effective development communications strategies. Her contributions have earned her commendations from esteemed organizations, including the United Nations Nigeria, German Missions in Nigeria, YouthhubAfrica, ActionAid Nigeria, West Africa Civil Society Institute (WASSI), NGYouthSDGs, and JayFm Jos.</p>
+                        <p>As a women and gender justice advocate, she is the Executive director at The GLW Community, alumna of the Basic Education Media Fellowship (BEMF) and The African MasterClass Series Cohort 4.</p>
+                    </div>
+                    <a href="#services"><button>Let's Get Started</button></a> 
+                </div>
+                <div class="greeting-imgs-container">
+                    <img id="first-img" src={% static "images/2.png" %} alt="">
+                    <div class="skew">
+                        <img id="second-img" src={% static "images/Picture Frames/4.png" %} alt="">
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="third-container">
+            <img id="doorway" src={% static "images/IMG_9671.JPG" %} alt="Renny entering a room" />
+            <div class="cut-container">
+                <img class="cut-img cut-first" src={% static "images/icons/9.png" %} alt="sunburst">
+            <div class="cut">
+                <h1>you're in the right place</h1>
+                <p>You need to work with somebody who understands your vision and can bring it to life. Together, we can work to make your event a successfull, splendid one. Explore the different ways we can work together.</p>
+            </div>
+            <img class="cut-img cut-second" src={% static "images/icons/6.webp" %} alt="">
+            </div>
+            
+            <div class="choice-container" id="services">
+                <h1>How can I support you?</h1>
+            </div>
+        </div>
+        <div class="fifth-container">
+            <div class="card-container">
+                <div class="card card-one">
+                    <img src={% static "images/option2.jpg" %} alt="">
+                    <div class="card-text">
+                        <h5>Get The Most Out of Your Event</h5>
+                        <p>I brighten up the room and deliver your message in a way that leaves guests with a memorable experience.</p>
+                    </div>
+                    
+                </div>
+                <div class="card card-two">
+                    <img src={% static "images/option1.jpg" %} alt="">
+                    <div class="card-text">
+                        <h5>Communication for Development</h5>
+                        <p>I work with NGOs and communities to develop and deploy a tailored C4D strategy to amplify their voices</p>
+                    </div>
+                    
+                </div>
+                <div class="card card-three">
+                    <img src={% static "images/option3.jpg" %} alt="">
+                    <div class="card-text">
+                        <h5>Inspiration <br>& Light</h5>
+                        <p>I run a vibrant online community where I share personal stories and Christian content that inspires young women.</p>
+                    </div>
+                </div>
+                <div class="card card-four">
+                    <img src={% static "images/option4.jpg" %} alt="">
+                    <div class="card-text">
+                        <h5>The GLW Community Show</h5>
+                        <p>I produce a live radio show that highlights women and girls' voices and empowers them through education.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <hr class="second">
+            <hr class="third">
+            <p><span>❝</span>I was thoroughly impressed by your presentation at the Women Building Wealth Conference. You have a natural ability to engage the audience with charm and professionalism, ensuring everything runs smoothly. Your quick thinking and warm presence made the event truly memorable. I will highly recommend you for any event where they need a <em>skilled</em> and <em>charismatic</em> compère. <span>❞</span></p>
+            <h2>Dr Sarah Amana</h2>
+            <h6>Rich Aunty Finance</h6>
+        </div>                   
+        <div class="sixth-container" id="contact">
+            <div class="contact-container">
+                <h1>Get in Touch</h1>
+                <p>|| +(234) 703-801-4927 ||</p>
+                <form action="{% url 'home' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="name-and-email">
+                        {{ contact_form.name }}
+                        {{ contact_form.email }}
+                    </div>
+                    {{ contact_form.phone }}
+                    {{ contact_form.message }}
+                    <button>Submit</button>
+                </form>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/rennnyMo/"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/rennnymo/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/rennnymo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/morenikeji-olonilua-426174108/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <img src={% static "images/IMG_0391.PNG" %} alt="">
+        </div>
+        <div class="seventh-container" id="portfolio">
+            <h1>Recent Events ||</h1>
+            <div class="events-container">
+                {% for event in  events %}
+                	<div class="event-item">
+                    <img src={{ event.image.url }} alt="event_img">
+                    <div class="event-details">
+                        <h6 class="event-title">{{ event.title }}</h6>
+                        <p class="event-date"><button class="event-tag">{{ event.tag }}</button> <i class="fa fa-calendar" aria-hidden="true">
+                            {{ event.date}}</i></p>
+                        <p class="event-description">{{ event.description}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="eighth-container">
+            <div class="radio-gallery-container">
+                <div class="radio-item">
+                    <img src={% static "images/IMG-20241006-WA0039.jpg" %} alt="">
+                    <div class="radio-item-text"></div>
+                </div>
+                <div class="radio-item">
+                    <img src={% static "images/IMG-20241006-WA0040.jpg" %} alt="">
+                    <div class="radio-item-text"></div>
+                </div>
+                <div class="radio-item">
+                    <img src={% static "images/IMG-20241006-WA0044.jpg" %} alt="">
+                    <div class="radio-item-text"></div>
+                </div>
+                <div class="radio-item">
+                    <img src={% static "images/IMG-20241006-WA0042.jpg" %} alt="">
+                    <div class="radio-item-text"></div>
+                </div>
+                <div class="radio-item">
+                    <img src={% static "images/WhatsApp Image 2024-10-06 at 19.07.45_76f8a60a.jpg" %} alt="">
+                    <div class="radio-item-text"></div>
+                </div>
+                <div class="radio-item">
+                    <img src={% static "images/IMG-20241006-WA0045.jpg" %} alt="">
+                    <div class="radio-item-text"></div>
+                </div>
+                <div class="radio-item">
+                    <img src={% static "images/WhatsApp Image 2024-10-06 at 19.07.45_584bc00f.jpg" %} alt="">
+                    <div class="radio-item-text"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="summary">
+            <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2024. All Rights Reserved - Morenikeji Olonilua E.Y.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
