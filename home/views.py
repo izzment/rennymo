@@ -6,7 +6,6 @@ from .forms import MessageForm
 
 # Create your views here.
 
-
 class StartingPageView(View):
     def get(self, request):
         events = Event.objects.all().order_by('-date')
