@@ -8,7 +8,7 @@ from .forms import MessageForm
 
 class StartingPageView(View):
     def get(self, request):
-        events = Event.objects.all().order_by('-date')
+        events = Event.objects.all().order_by('-date')[:6]
 
         context = {
             'events': events,
